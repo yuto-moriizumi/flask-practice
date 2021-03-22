@@ -5,9 +5,9 @@ from datetime import datetime
 class Entry(db.Model):
     __tablename__ = "entries"
     id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db, String(50), unique=True)
+    title = db.Column(db.String(50), unique=True)
     text = db.Column(db.Text)
-    created_at = db.Column(db.Datetime)
+    created_at = db.Column(db.DateTime)
 
     def __init__(self, title=None, text=None):
         self.title = title
