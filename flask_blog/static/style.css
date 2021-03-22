@@ -1,0 +1,11 @@
+.card {
+    margin: 0.25rem;   
+}
+
+.blog-body{
+    padding:1.25rem;
+}
+
+*{
+    font-family: 'Noto Sans JP', sans-serif;
+}
