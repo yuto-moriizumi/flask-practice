@@ -7,11 +7,12 @@
             <h5 class="card-title">
                 {{entry.title}}
             </h5>
+            <p>{{entry.text[:10]}}...</p>
             <a href="{{ url_for('entry.show_entry', id=entry.id) }}" class="card-link">続きを読む</a>
         </div>
     </div>
     {% else %}
-        投稿がありません
+    投稿がありません
     {% endfor %}
 </ul>
 {% endblock %}
