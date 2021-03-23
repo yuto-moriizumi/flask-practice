@@ -14,7 +14,7 @@
         integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
         crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
     <title>Flask Blog</title>
 </head>
@@ -54,8 +54,17 @@
         {{ message }}
     </div>
     {% endfor %}
-    <div class="blog-body">
-        {% block body %}{% endblock %}
+    <div class="container">
+        <div class="blog-body">
+            {% block body %}{% endblock %}
+        </div>
+        <footer>
+            <p class="small">&copy;森泉友登</p>
+            <p>
+                <img src="{{url_for('static',filename='img/flask-icon.jpg')}}" alt="flaskのアイコン" height="32rem" />
+                このサイトはFlaskで作られました
+            </p>
+        </footer>
     </div>
 </body>
 
