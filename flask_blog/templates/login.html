@@ -5,7 +5,7 @@
 {% block body %}
 <!-- block bodyからendblockまでを継承元ファイルから置き換える -->
 <form action="{{url_for('view.login')}}" method="POST">
-    <!-- {{}}波かっこ2つで式を埋め込める -->
+    <!-- 波かっこ2つで式を埋め込める -->
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Email address</label>
         <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="username">
